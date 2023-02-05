@@ -1,0 +1,10 @@
+sed 's/Zoo//' pandas.txt >new_file.txt
+awk '{print $1,$4,$2}' pandas.txt | sort -k 3
+awk '{print $5}' pandas.txt | sort > new_file.txt
+sed 's/female/F/' pandas.txt | sed 's/male/M/'
+grep -c "female" pandas.txt | grep -c "October" pandas.txt
+grep -n "a" pandas.txt > new_file.txt
+sed '2,5d' pandas.txt | sed '3,12d' | sed '4,18d' > new_file.txt
+grep -i "x" pandas.txt > new_file.txt
+awk '!a[$5]++' pandas.txt > new_file.txt
+awk '{print}' pandas.txt |sort -nk4 | awk '$4<10' | awk '{print $1,$4}' > new_file.txt
