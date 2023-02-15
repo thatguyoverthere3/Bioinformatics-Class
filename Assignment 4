@@ -1,0 +1,10 @@
+makeblastdb -in C:\Users\jakob\Downloads\mystery_transcripts.fasta -dbtype nucl -out D:\Bioinformatics
+makeblastdb -in C:\Users\jakob\Downloads\mystery_proteins.fasta -dbtype prot -out D:\Bioinformatics
+blastn -query mystery_nucleotide_query.fasta -task megablast -db mystery_transcripts -out mystery_transcripts_results.txt -evalue 1e-3 -max_hsps 5 -outfmt 7
+Best Hit: T010027234997 at 91.965%
+awk '$3 > 90' mystery_transcripts_results.txt >> most_similar_hits.txt
+blastp -query mystery_protein?_query.fasta -db mystery_proteins -out mystery_protein_results.txt -evalue 1e-3 -max_hsps 15 -outfms 7
+Best Hit: P010027090796 at 87.805%
+Coffea arabica
+Gardenia jasminoides
+Putative Catalase gene
