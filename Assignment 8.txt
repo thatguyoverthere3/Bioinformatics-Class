@@ -1,0 +1,7 @@
+Assignment 8
+1. Methanococcus maripaludis
+2. mcrC- Methyl-coenzyme M reductase
+3. Target sequence: AGAAGGGCTACGTAACGACGTGG ; Genomic location: CP026606.1:1176903
+4. Left Primer sequence: TAAAATACGGGGAATCTGCTGT; Left Primer coordinates: CP026606.1:1177123-1177145
+   Right Primer sequence: TTTTGTAATGTGCCTTCTCCCT; Right Primer coordinates: CP026606.1:1176862-1176884
+5. If this gene was knocked out, then the organism will be unable to perform methanogenesis and it would die.
