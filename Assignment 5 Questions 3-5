@@ -1,3 +1,4 @@
 muscle -in infile.fasta -seqtype auto -maxiters 16 -maxmb 3000000 -log logfile.txt -weight1 clustalw -cluster1 upgmb -sueff 0.1 -root1 psuedo -maxtrees 1 -weight2 clustalw -cluster2 upgmb -sueff 0.1 -root2 pseudo -objscore sp -noanchors -out output.fasta
+raxmlHPC-PTHREADS-AVX2 -T 2 -f a -m GTRGAMMA -p 12345 -x 12345 -# 100 -s input.fasta -n output.newick
 It is closely related to P. lylie, D. viridis, C. sphinx, and R. leschenaulti
 Phylogeny is useful for tracking the lineages of organisms and how they diversify. It is especially useful in tracking the different strains of COVID
